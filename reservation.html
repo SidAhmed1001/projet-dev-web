@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités - Cap Bon Explorer</title>
+    <link rel="stylesheet" href="BootStraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="">
+    <div class=" p-2" id="maincontainer">
+        <header class="modal-header border-opacity-10" id="header1">
+            <div class="d-flex justify-content-center align-items-center col-4 gap-5">
+                <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
+                        id="image1"></a>
+            </div>
+            <h1 class="display-2 text-center" id="titre">Cap Bon Explorer</h1>
+
+        </header>
+        <header id="header2" class="rounded">
+
+            <nav class="navbar nav" id="navbar1">
+                <!-- MOBILE ONLY -->
+                <div class="container-fluid rounded-rounded">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myNavLinks" aria-controls="myNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    </button>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"><img src="images/arrow.png" alt="Menu" id="arrow"
+                                class="navbar-toggler-icon rounded-circle"></span>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <div class="navbar-nav">
+                                <div class="nav-item pep">
+                                    <a href="index.html" class="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="activites.html" class="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="agenda.html" class="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="reservation.html" class="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="contact.html" class="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DESKTOP ONLY-->
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+                        <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                            <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                                <div class="nav-item">
+                                    <a href="index.html" class="" id="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="activites.html" class="" id="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="agenda.html" class="" id="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="reservation.html" class="" id="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" class="" id="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="main bg-light p-2 m-2 rounded-3" id="main">
+            <!-- Page header -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <h1 class="mb-2">Simuler une réservation</h1>
+                    <p class="lead mb-0">
+                        Choisissez une activité, indiquez vos informations et calculez le montant estimé.
+                        Aucune réservation réelle n'est effectuée.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Form + summary -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row g-4">
+
+                        <!-- LEFT: the form -->
+                        <div class="col-12 col-lg-7">
+                            <div class="card shadow-sm">
+                                <div class="card-header bg-primary text-white">
+                                    <h2 class="h5 mb-0">Vos informations</h2>
+                                </div>
+                                <div class="card-body">
+
+                                    <form id="form-reservation" novalidate>
+
+                                        <!-- Identity -->
+                                        <h3 class="h6 text-uppercase text-muted mt-1 mb-3">Identité</h3>
+
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <label for="nom" class="form-label">Nom <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" id="nom" name="nom" class="form-control"
+                                                    placeholder="Ex. Ben Salah" required>
+                                                <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="prenom" class="form-label">Prénom <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" id="prenom" name="prenom" class="form-control"
+                                                    placeholder="Ex. Amira" required>
+                                                <div class="invalid-feedback">Veuillez saisir votre prénom.</div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Adresse e-mail <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="email" id="email" name="email" class="form-control"
+                                                    placeholder="nom@exemple.tn" required>
+                                                <div class="invalid-feedback">Veuillez saisir une adresse e-mail valide.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="telephone" class="form-label">Téléphone <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="tel" id="telephone" name="telephone" class="form-control"
+                                                    placeholder="+216 22 123 456" required>
+                                                <div class="invalid-feedback">Veuillez saisir votre numéro de téléphone.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <!-- Activity -->
+                                        <h3 class="h6 text-uppercase text-muted mt-1 mb-3">Activité</h3>
+
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label for="activite" class="form-label">Activité choisie <span
+                                                        class="text-danger">*</span></label>
+                                                <select id="activite" name="activite" class="form-select" id="select1" required>
+                                                    <option value="" selected disabled>— Choisir une activité —</option>
+                                                    <option value="A01" data-prix="20">Découverte de la médina — Nabeul
+                                                        (20 TND)</option>
+                                                    <option value="A02" data-prix="35">Atelier d'initiation à la poterie
+                                                        — Nabeul (35 TND)</option>
+                                                    <option value="A03" data-prix="30">Parcours découverte de Kerkouane
+                                                        — Kerkouane (30 TND)</option>
+                                                    <option value="A04" data-prix="25">Randonnée découverte — Djebel
+                                                        Abderrahmane (25 TND)</option>
+                                                    <option value="A05" data-prix="40">Circuit du littoral — Kélibia (40
+                                                        TND)</option>
+                                                    <option value="A06" data-prix="25">Peinture sur céramique — Nabeul
+                                                        (25 TND)</option>
+                                                    <option value="A07" data-prix="15">Découverte d'un marché local —
+                                                        Nabeul (15 TND)</option>
+                                                    <option value="A08" data-prix="30">Promenade photographique —
+                                                        Hammamet (30 TND)</option>
+                                                </select>
+                                                <div class="invalid-feedback">Veuillez choisir une activité.</div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="date" class="form-label">Date souhaitée <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="date" id="date" name="date" class="form-control" required>
+                                                <div class="invalid-feedback">Veuillez choisir une date valide (non
+                                                    passée).</div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6">
+                                                <label for="participants" class="form-label">Nombre de participants
+                                                    <span class="text-danger">*</span></label>
+                                                <input type="number" id="participants" name="participants"
+                                                    class="form-control" min="1" max="6" value="1" disabled required>
+                                                <div class="form-text">Entre 1 et 6 personnes. Remise de 10 % dès 4
+                                                    personnes.</div>
+                                                <div class="invalid-feedback">Le nombre doit être compris entre 1 et 6.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label d-block">Type de participation <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="type"
+                                                        id="type-individuel" value="individuel" checked onclick="selectindivisuel()">
+                                                    <label class="form-check-label"
+                                                        for="type-individuel">Individuel</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="type"
+                                                        id="type-famille" value="famille" >
+                                                    <label class="form-check-label" for="type-famille">Famille</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="type"
+                                                        id="type-groupe" value="groupe" >
+                                                    <label class="form-check-label" for="type-groupe">Groupe</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="commentaire" class="form-label">Commentaire
+                                                    (facultatif)</label>
+                                                <textarea id="commentaire" name="commentaire" class="form-control"
+                                                    rows="3" placeholder="Une demande particulière ?"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <hr class="my-4">
+
+                                        <!-- Consent -->
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="conditions"
+                                                name="conditions" required>
+                                            <label class="form-check-label" for="conditions">
+                                                J'accepte les conditions de cette simulation. <span
+                                                    class="text-danger">*</span>
+                                            </label>
+                                            <div class="invalid-feedback">Vous devez accepter les conditions.</div>
+                                        </div>
+
+                                        <!-- Error / success zones -->
+                                        <div id="message-erreur" class="alert alert-danger" role="alert" hidden></div>
+
+                                        <!-- Buttons -->
+                                        <div class="d-flex flex-wrap gap-2 mt-3">
+                                            <button type="button" id="btn-calculer" class="btn btn-outline-primary">
+                                                Calculer / Actualiser
+                                            </button>
+                                            <button type="submit" class="btn btn-primary">
+                                                Valider la simulation
+                                            </button>
+                                            <button type="button" id="btn-reset"
+                                                class="btn btn-outline-secondary ms-auto">
+                                                Réinitialiser
+                                            </button>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: live price summary -->
+                        <div class="col-12 col-lg-5">
+                            <div class="card shadow-sm sticky-lg-top" style="top: 1rem;">
+                                <div class="card-header bg-success text-white">
+                                    <h2 class="h5 mb-0">Récapitulatif du prix</h2>
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row mb-0">
+                                        <dt class="col-7">Prix unitaire</dt>
+                                        <dd class="col-5 text-end"><span id="prix-unitaire">0</span> TND</dd>
+
+                                        <dt class="col-7">Participants</dt>
+                                        <dd class="col-5 text-end"><span id="nb-participants">0</span></dd>
+
+                                        <dt class="col-7">Sous-total</dt>
+                                        <dd class="col-5 text-end"><span id="sous-total">0.00</span> TND</dd>
+
+                                        <dt class="col-7">Remise (10 % dès 4 pers.)</dt>
+                                        <dd class="col-5 text-end text-danger">− <span id="remise">0.00</span> TND</dd>
+
+                                        <hr>
+
+                                        <dt class="col-7 fs-5">Total à payer</dt>
+                                        <dd class="col-5 text-end fs-5 fw-bold text-success">
+                                            <span id="total">0.00</span> TND
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!-- Confirmation (hidden until valid submit) -->
+                            <div id="recapitulatif" class="card border-success mt-4" hidden>
+                                <div class="card-header bg-success text-white">
+                                    <h2 class="h5 mb-0">Simulation enregistrée</h2>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-2">
+                                        <strong>Simulation enregistrée localement à l'écran : aucune réservation réelle
+                                            n'a été effectuée.</strong>
+                                    </p>
+                                    <ul class="list-unstyled mb-0" id="recap-details"></ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer bg-light p-2 m-2 rounded-3" id="footer1" id="mainfooter">
+            <ul class="list-unstyled list-group-horizontal">
+                <li><a href="index.html" id="nav-link-footer">-Accueil</a></li>
+                <li><a href="agenda.html" id="nav-link-footer">-Agenda</a></li>
+                <li><a href="contact.html" id="nav-link-footer">-Contact</a></li>
+            </ul>
+            <p class="text-center">copyright © 2024 Cap Bon Explorer. Tous droits réservés. (projet pour ISETN)</p>
+
+        </footer>
+    </div>
+
+    <!--partie scripts/bootstrap-->
+    <script src="BootStraps/js/bootstrap.bundle.min.js"></script>
+    <script src="JSscripts/reservation.js"></script>
+</body>
+
+</html>

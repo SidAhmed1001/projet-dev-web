@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités - Cap Bon Explorer</title>
+    <link rel="stylesheet" href="BootStraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="">
+    <div class=" p-2" id="maincontainer">
+        <header class="modal-header border-opacity-10" id="header1">
+            <div class="d-flex justify-content-center align-items-center col-4 gap-5">
+                <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
+                        id="image1"></a>
+            </div>
+            <h1 class="display-2 text-center" id="titre">Cap Bon Explorer</h1>
+
+        </header>
+        <header id="header2" class="rounded">
+
+            <nav class="navbar nav" id="navbar1">
+                <!-- MOBILE ONLY -->
+                <div class="container-fluid rounded-rounded">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myNavLinks" aria-controls="myNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    </button>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"><img src="images/arrow.png" alt="Menu" id="arrow"
+                                class="navbar-toggler-icon rounded-circle"></span>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <div class="navbar-nav">
+                                <div class="nav-item pep">
+                                    <a href="index.html" class="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="activites.html" class="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="agenda.html" class="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="reservation.html" class="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="contact.html" class="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DESKTOP ONLY-->
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+                        <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                            <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                                <div class="nav-item">
+                                    <a href="index.html" class="" id="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="activites.html" class="" id="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="agenda.html" class="" id="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="reservation.html" class="" id="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" class="" id="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main bg-light p-2 m-2 rounded-3" id="main">
+
+        </main>
+        <footer class="footer bg-light p-2 m-2 rounded-3" id="footer1" id="mainfooter">
+            <ul class="list-unstyled list-group-horizontal">
+                <li><a href="index.html" id="nav-link-footer">-Accueil</a></li>
+                <li><a href="agenda.html" id="nav-link-footer">-Agenda</a></li>
+                <li><a href="contact.html" id="nav-link-footer">-Contact</a></li>
+            </ul>
+            <p class="text-center">copyright © 2024 Cap Bon Explorer. Tous droits réservés. (projet pour ISETN)</p>
+
+        </footer>
+    </div>
+
+    <!--partie scripts/bootstrap-->
+    <script src="BootStraps/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

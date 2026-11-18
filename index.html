@@ -12,7 +12,7 @@
 
 <body class="">
     <div class=" p-2" id="maincontainer">
-        <header class="modal-header rounded" id="header1">
+        <header class="modal-header border-opacity-10" id="header1">
             <div class="d-flex justify-content-center align-items-center col-4 gap-5">
                 <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
                         id="image1"></a>
@@ -130,49 +130,51 @@
                 <div class="container3">
                     <h2>Activités à la une</h2>
                     <div class="row m-4 g-3">
-                        <article class="col-12 col-md-6 col-lg-3 cardcustom" id="cardimage1">
+
+                        <article class="col-12 col-md-6 col-lg-3 cardcustom" id="">
                             <div class="card h-100">
-                                <div class="card-body" id="cardbody">
+                                <div class="card-body" id="cardimage1">
                                     <h3 class="card-title">Découverte de la médina</h3>
                                     <p class="card-text">Catégorie : Culture</p>
-                                    <p class="card-text"><strong>20 TND</strong></p>
-                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                    <p class="card-text"><strong>180 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-primary btn-outline-light">Voir les activités</a>
                                 </div>
                             </div>
                         </article>
+
                         <article class="col-12 col-md-6 col-lg-3 cardcustom">
                             <div class="card h-100">
-                                <img src="images/a01.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Découverte de la médina</h3>
+                                <div class="card-body" id="cardimage2">
+                                    <h3 class="card-title">Circuit du littoral — Kélibia</h3>
                                     <p class="card-text">Catégorie : Culture</p>
-                                    <p class="card-text"><strong>20 TND</strong></p>
-                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                    <p class="card-text"><strong>120 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-primary btn-outline-light">Voir les activités</a>
                                 </div>
                             </div>
                         </article>
+
                         <article class="col-12 col-md-6 col-lg-3 cardcustom">
-                            <div class="card h-100">
-                                <img src="images/a01.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Découverte de la médina</h3>
-                                    <p class="card-text">Catégorie : Culture</p>
-                                    <p class="card-text"><strong>20 TND</strong></p>
-                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                            <div class="card h-100" >
+                                <div class="card-body" id="cardimage3">
+                                    <h3 class="card-title text-light">Peinture sur céramique — Nabeul</h3>
+                                    <p class="card-text text-light">Catégorie : Culture</p>
+                                    <p class="card-text text-light"><strong>120 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-primary btn-outline-light">Voir les activités</a>
                                 </div>
                             </div>
                         </article>
+
                         <article class="col-12 col-md-6 col-lg-3 cardcustom">
-                            <div class="card h-100">
-                                <img src="images/a01.jpg" class="card-img-top " alt="...">
-                                <div class="card-body">
-                                    <h3 class="card-title">Découverte de la médina</h3>
+                            <div class="card h-100" >
+                                <div class="card-body" id="cardimage4">
+                                    <h3 class="card-title">Parcours découverte de Kerkouane — Kerkouane</h3>
                                     <p class="card-text">Catégorie : Culture</p>
-                                    <p class="card-text"><strong>20 TND</strong></p>
-                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                    <p class="card-text"><strong>150 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-primary btn-outline-light">Voir les activités</a>
                                 </div>
                             </div>
                         </article>
+                        <a class="btn btn-success" href="activites.html" id="discover-activities-btn">Découvrir plus d'activités</a>
                     </div>
                 </div>
             </section>
@@ -191,7 +193,6 @@
                 </div>
             </section>
 
-            <!-- 5. CTA réservation -->
             <section id="cta-reservation">
                 <div class="container text-center">
                     <h2>Prêt à explorer ?</h2>
@@ -200,8 +201,14 @@
             </section>
 
         </main>
-        <footer>
-            <!-- secondary nav + link to index.html -->
+        <footer class="footer bg-light p-2 m-2 rounded-3" id="footer1" id="mainfooter">
+            <ul class="list-unstyled list-group-horizontal">
+                <li><a href="index.html" id="nav-link-footer">-Accueil</a></li>
+                <li><a href="agenda.html" id="nav-link-footer">-Agenda</a></li>
+                <li><a href="contact.html" id="nav-link-footer">-Contact</a></li>
+            </ul>
+            <p class="text-center">copyright © 2024 Cap Bon Explorer. Tous droits réservés. (projet pour ISETN)</p>
+
         </footer>
     </div>
 
