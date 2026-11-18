@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Bon Explorer</title>
+
+    <link rel="stylesheet" href="BootStraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="">
+    <div class=" p-2" id="maincontainer">
+        <header class="modal-header rounded" id="header1">
+            <div class="d-flex justify-content-center align-items-center col-4 gap-5">
+                <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
+                        id="image1"></a>
+            </div>
+            <h1 class="display-2 text-center" id="titre">Cap Bon Explorer</h1>
+
+        </header>
+        <header id="header2" class="rounded">
+
+            <nav class="navbar nav" id="navbar1">
+                <!-- MOBILE ONLY -->
+                <div class="container-fluid rounded-rounded">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myNavLinks" aria-controls="myNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    </button>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"><img src="images/arrow.png" alt="Menu" id="arrow"
+                                class="navbar-toggler-icon rounded-circle"></span>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <div class="navbar-nav">
+                                <div class="nav-item pep">
+                                    <a href="index.html" class="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="activites.html" class="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="agenda.html" class="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="reservation.html" class="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="contact.html" class="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DESKTOP ONLY-->
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+                        <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                            <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                                <div class="nav-item">
+                                    <a href="index.html" class="" id="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="activites.html" class="" id="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="agenda.html" class="" id="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="reservation.html" class="" id="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" class="" id="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main bg-light p-2 m-2 rounded-3" id="main">
+
+            <section id="banniere">
+                <div class="container1">
+                    <h1 id="hero-banner-title">Cap Bon Explorer</h1>
+                    <p id="introduction">Est une jeune structure touristique dédiée à la valorisation du patrimoine et des savoir-faire du Cap
+                        Bon.</p>
+                        <a class="btn btn-success" href="activites.html" id="discover-activities-btn">Découvrir les activités</a>
+                </div>
+            </section>
+
+            <!-- 2. Qui sommes-nous ? -->
+            <section id="qui-sommes-nous">
+                <div class="container2">
+                    <h2>Qui sommes-nous ?</h2>
+                    <ul>
+                        <li>
+                            <p>Cap Bon Explorer vous invite à découvrir le patrimoine, les savoir-faire et les paysages
+                                du Cap Bon. Parcourez nos expériences, choisissez une activité et préparez votre visite
+                                grâce à une simulation de réservation simple et transparente. Notre équipe passionnée
+                                travaille avec les artisans, les guides et les producteurs locaux pour proposer des
+                                expériences authentiques et accessibles.</p>
+                        </li>
+                        <li>
+                            <p>De la médina de Nabeul aux ruines de Kerkouane, en passant par les plages de Kélibia et
+                                les sentiers du Djebel Abderrahmane, chaque itinéraire révèle la richesse culturelle et
+                                naturelle de la région. Seul, en famille ou en groupe, notre portail vous accompagne
+                                dans la préparation de votre séjour, avec respect des traditions et de l'environnement.
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- 3. Featured activity cards -->
+            <section id="activites-vedettes">
+                <div class="container3">
+                    <h2>Activités à la une</h2>
+                    <div class="row m-4 g-3">
+                        <article class="col-12 col-md-6 col-lg-3 cardcustom" id="cardimage1">
+                            <div class="card h-100">
+                                <div class="card-body" id="cardbody">
+                                    <h3 class="card-title">Découverte de la médina</h3>
+                                    <p class="card-text">Catégorie : Culture</p>
+                                    <p class="card-text"><strong>20 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 col-lg-3 cardcustom">
+                            <div class="card h-100">
+                                <img src="images/a01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Découverte de la médina</h3>
+                                    <p class="card-text">Catégorie : Culture</p>
+                                    <p class="card-text"><strong>20 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 col-lg-3 cardcustom">
+                            <div class="card h-100">
+                                <img src="images/a01.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Découverte de la médina</h3>
+                                    <p class="card-text">Catégorie : Culture</p>
+                                    <p class="card-text"><strong>20 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 col-lg-3 cardcustom">
+                            <div class="card h-100">
+                                <img src="images/a01.jpg" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Découverte de la médina</h3>
+                                    <p class="card-text">Catégorie : Culture</p>
+                                    <p class="card-text"><strong>20 TND</strong></p>
+                                    <a href="activites.html" class="btn btn-outline-primary">Voir les activités</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pourquoi">
+                <div class="container">
+                    <h2>Pourquoi découvrir le Cap Bon ?</h2>
+                    <ul>
+                        <li><p><b>Un patrimoine millénaire :</b> la médina de Nabeul, le site punique de Kerkouane et les vestiges romains témoignent de plus de deux mille ans d'histoire.</p> </li>
+                        <li>
+                            <p><b>Des paysages variés :</b> : plages de sable fin à Kélibia, collines du Djebel Abderrahmane et campagnes verdoyantes offrent un cadre naturel préservé.</p>
+                        </li>
+                        <li><p><b>Un artisanat vivant : </b>poterie, céramique peinte et tissage perpétuent des savoir-faire transmis de génération en génération.</p></li>
+                        <li><p><b>Une gastronomie authentique :</b>huile d'olive, agrumes, poissons frais et pâtisseries locales invitent à découvrir les saveurs méditerranéennes.</p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 5. CTA réservation -->
+            <section id="cta-reservation">
+                <div class="container text-center">
+                    <h2>Prêt à explorer ?</h2>
+                    <a href="reservation.html" class="btn btn-success">Simuler une réservation</a>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <!-- secondary nav + link to index.html -->
+        </footer>
+    </div>
+
+    <!--partie scripts/bootstrap-->
+    <script src="BootStraps/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

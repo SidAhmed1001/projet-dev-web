@@ -1,0 +1,180 @@
+.title{
+  text-align: center;
+}
+#image1{
+  display: flex;
+  width: 80px;
+  margin: 0 0 0 0;
+  align-items: left;
+  float: left;
+  
+}
+header{
+  background-color: #fab74a;
+}
+#navbar1{
+  background-color: #918664;
+  align-items: center;	
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+#navbar1:after{
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.368)); 
+  pointer-events: none;
+}
+#titre{
+  text-align: right;
+  width: 1200px;
+  padding: 5px;
+
+}
+nav.navbar{
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+#arrow{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+#maincontainer{
+  background-color: #e3e0c2;
+  border-radius: 10px;
+  padding: 10px;
+}
+#header1{
+  position: relative;
+  margin-top: 10px;
+}
+#header1:after{
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(to left, transparent, rgba(232, 38, 48, 0.577)); 
+  background-repeat: no-repeat;
+  
+}
+#header2{
+  background-color: #e3e0c2;
+  margin-top: 10px;
+}
+#banniere {
+  position: relative;
+  background-image: url("../images/kelibia_bannieres.png");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 50px;
+}
+#banniere:after{
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 35%; 
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,1)); 
+  background-repeat: no-repeat;
+  
+}
+#introduction{
+  color: white;
+  background-color: rgba(42, 42, 42, 0.34);
+  border-radius: 15px;
+  padding: 8px;
+}
+.pep{
+  color: antiquewhite;
+  border: 7px solid #fab74a;
+  background-color: #875c17;
+  color: bisque;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+#mobileMenu{
+  background-color: antiquewhite;
+}
+#hero-banner-title{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.394);
+  margin: 8px;
+  margin-top: 15px;
+  padding: 5px;
+  width: 360px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.container1{
+  padding: 9px;
+}
+#discover-activities-btn{
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-shrink: 0;
+  padding: 0.6rem 1.2rem;
+  line-height: 1.5;
+  pointer-events: auto;
+}
+#nav-link{
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+#nav-link:hover{
+  transform: scale(1.3);
+  color: #fab74a;
+  
+}
+.cardcustom{
+  border-radius: 20px;
+  height: 300px;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.cardcustom:hover{
+  transform: scale(1.05);
+}
+#cardimage1{
+  background-image: url(/images/hammamet.png);
+  align-items: center;	
+  margin: 0 auto;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#cardimage1:after{
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 30%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  pointer-events: none;
+}
+#cardbody{
+  background-color: transparent;
+}
