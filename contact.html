@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités - Cap Bon Explorer</title>
+    <link rel="stylesheet" href="BootStraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="">
+    <div class=" p-2" id="maincontainer">
+        <header class="modal-header border-opacity-10" id="header1">
+            <div class="d-flex justify-content-center align-items-center col-4 gap-5">
+                <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
+                        id="image1"></a>
+            </div>
+            <h1 class="display-2 text-center" id="titre">Cap Bon Explorer</h1>
+
+        </header>
+        <header id="header2" class="rounded">
+
+            <nav class="navbar nav" id="navbar1">
+                <!-- MOBILE ONLY -->
+                <div class="container-fluid rounded-rounded">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myNavLinks" aria-controls="myNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    </button>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"><img src="images/arrow.png" alt="Menu" id="arrow"
+                                class="navbar-toggler-icon rounded-circle"></span>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <div class="navbar-nav">
+                                <div class="nav-item pep">
+                                    <a href="index.html" class="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="activites.html" class="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="agenda.html" class="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="reservation.html" class="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="contact.html" class="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DESKTOP ONLY-->
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+                        <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                            <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                                <div class="nav-item">
+                                    <a href="index.html" class="" id="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="activites.html" class="" id="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="agenda.html" class="" id="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="reservation.html" class="" id="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" class="" id="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main bg-light p-2 m-2 rounded-3" id="main">
+            <main>
+
+                <!-- 1. Page title -->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <h1 class="mb-2">Contact et FAQ</h1>
+                        <p class="lead mb-0">
+                            Une question sur nos activités, une demande particulière ?
+                            Retrouvez nos coordonnées et les réponses aux questions les plus fréquentes.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. Contact block + hours -->
+                <section class="py-5" id="contacthourblock">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <!-- Left: coordinates -->
+                            <div class="col-12 col-lg-6">
+                                <h2 class="h4 mb-3">Nous contacter</h2>
+
+                                <ul class="list-unstyled fs-5">
+                                    <li class="mb-3">
+                                        <strong>Adresse :</strong><br>
+                                        12, avenue de la Médina<br>
+                                        8000 Nabeul, Tunisie
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Téléphone :</strong><br>
+                                        <a href="tel:+21672000000">+216 72 000 000</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>E-mail :</strong><br>
+                                        <a href="mailto:contact@capbonexplorer.tn">contact@capbonexplorer.tn</a>
+                                    </li>
+                                </ul>
+
+                                <p class="text-muted small">
+                                    Coordonnées fictives — projet pédagogique.
+                                </p>
+
+                                <h3 class="h5 mt-4 mb-3">Horaires d'accueil</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Lundi – Vendredi</span><span>09:00 – 17:00</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Samedi</span><span>09:00 – 13:00</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Dimanche et jours fériés</span><span>Fermé</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Right: static map -->
+                            <div class="col-12 col-lg-6">
+                                <h2 class="h4 mb-3">Nous trouver</h2>
+                                <figure class="figure w-100">
+                                    <img src="images/carte-nabeul.png" class="figure-img img-fluid rounded shadow-sm"
+                                        alt="Carte statique situant Nabeul dans le Cap Bon">
+                                    <figcaption class="figure-caption">
+                                        Nabeul, au cœur du Cap Bon — carte statique.
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. FAQ (Accordion) -->
+                <section class="py-5 bg-light" id="faqbloc">
+                    <div class="container">
+                        <h2 class="h4 mb-4">Foire aux questions</h2>
+
+                        <div class="accordion" id="accordionFAQ">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="faq1-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                        Comment fonctionne la simulation de réservation ?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Choisissez une activité, une date et un nombre de participants :
+                                        le montant estimé s'affiche automatiquement. Aucun paiement n'est
+                                        effectué et aucune donnée n'est envoyée à un serveur.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="faq2-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        Y a-t-il une remise pour les groupes ?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Oui. Une remise automatique de <strong>10 %</strong> est appliquée
+                                        dès que le nombre de participants atteint 4 personnes (dans la limite
+                                        de 6 participants par réservation).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="faq3-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        Puis-je annuler ou modifier une réservation ?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Le site étant une démonstration pédagogique, aucune réservation
+                                        réelle n'est enregistrée. Pour toute demande, écrivez-nous à
+                                        <a href="mailto:contact@capbonexplorer.tn">contact@capbonexplorer.tn</a>.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="faq4-heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        Les activités sont-elles accessibles à tous ?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        La plupart des activités conviennent à tous les publics. Certaines
+                                        (randonnée, circuit du littoral) demandent une condition physique
+                                        correcte. Contactez-nous pour toute question d'accessibilité.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Mini contact form -->
+                <section class="py-5">
+                    <div class="container">
+                        <h2 class="h4 mb-4">Envoyer un message</h2>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+
+                                <form id="form-contact" novalidate>
+
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <label for="contact-nom" class="form-label">Nom <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="contact-nom" name="nom" class="form-control"
+                                                required>
+                                            <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <label for="contact-email" class="form-label">E-mail <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="email" id="contact-email" name="email" class="form-control"
+                                                required>
+                                            <div class="invalid-feedback">Veuillez saisir une adresse e-mail valide.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="contact-sujet" class="form-label">Sujet <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" id="contact-sujet" name="sujet" class="form-control"
+                                                required>
+                                            <div class="invalid-feedback">Veuillez indiquer un sujet.</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="contact-message" class="form-label">Message <span
+                                                    class="text-danger">*</span></label>
+                                            <textarea id="contact-message" name="message" class="form-control" rows="5"
+                                                required></textarea>
+                                            <div class="invalid-feedback">Veuillez écrire votre message.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Confirmation zone (hidden until submit succeeds) -->
+                                    <div id="contact-confirmation" class="alert alert-success mt-3" role="status"
+                                        hidden>
+                                        Message simulé — aucun envoi réel n'a été effectué.
+                                    </div>
+
+                                    <div class="d-flex gap-2 mt-3">
+                                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        <button type="reset" class="btn btn-outline-secondary">Effacer</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </main>
+        <footer class="footer bg-light p-2 m-2 rounded-3" id="footer1" id="mainfooter">
+            <ul class="list-unstyled list-group-horizontal">
+                <li><a href="index.html" id="nav-link-footer">-Accueil</a></li>
+                <li><a href="agenda.html" id="nav-link-footer">-Agenda</a></li>
+                <li><a href="contact.html" id="nav-link-footer">-Contact</a></li>
+            </ul>
+            <p class="text-center">copyright © 2024 Cap Bon Explorer. Tous droits réservés. (projet pour ISETN)</p>
+
+        </footer>
+    </div>
+
+    <!--partie scripts/bootstrap-->
+    <script src="BootStraps/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -105,7 +105,7 @@
 
             <!-- Form + summary -->
             <section class="py-5">
-                <div class="container">
+                <form class="container" id="form">
                     <div class="row g-4">
 
                         <!-- LEFT: the form -->
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="card-body">
 
-                                    <form id="form-reservation" novalidate>
+                                    <form id="form-reservation" novalidate onsubmit="return validForm()">
 
                                         <!-- Identity -->
                                         <h3 class="h6 text-uppercase text-muted mt-1 mb-3">Identité</h3>
@@ -150,9 +150,28 @@
                                             <div class="col-12 col-md-6">
                                                 <label for="telephone" class="form-label">Téléphone <span
                                                         class="text-danger">*</span></label>
-                                                <input type="tel" id="telephone" name="telephone" class="form-control"
-                                                    placeholder="+216 22 123 456" required>
-                                                <div class="invalid-feedback">Veuillez saisir votre numéro de téléphone.
+                                                <div class="row g-2">
+                                                    <!-- Country / regex selector (smaller) -->
+                                                    <div class="col-4 col-md-3">
+                                                        <select id="telephone-country" name="telephone-country"
+                                                            class="form-select form-select-noarrow">
+                                                            <option value="+216" data-regex="^(\+216|00216)?[2459]\d{7}$"
+                                                                selected>+216 🇹🇳</option>
+                                                            <option value="+33" data-regex="^(\+33|0033)?0?[67]\d{8}$">
+                                                                +33 🇫🇷</option>
+                                                            <option value="+1" data-regex="^\+?1?\d{10}$">+1 🇺🇸 
+                                                            </option>
+                                                            <option value="+intl" data-regex="^\+?\d{8,15}$">🌍 +Intl
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- Phone input (takes the rest) -->
+                                                    <div class="col-8 col-sm-9">
+                                                        <input type="tel" id="telephone" name="telephone"
+                                                            class="form-control" placeholder="22 123 456" required>
+                                                        <div class="invalid-feedback">Veuillez saisir votre numéro de
+                                                            téléphone.</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,18 +231,19 @@
                                                         class="text-danger">*</span></label>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="type"
-                                                        id="type-individuel" value="individuel" checked onclick="selectindivisuel()">
+                                                        id="type-individuel" value="individuel" checked
+                                                        onclick="selectindivisuel()">
                                                     <label class="form-check-label"
                                                         for="type-individuel">Individuel</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="type"
-                                                        id="type-famille" value="famille" >
+                                                        id="type-famille" value="famille">
                                                     <label class="form-check-label" for="type-famille">Famille</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="type"
-                                                        id="type-groupe" value="groupe" >
+                                                        id="type-groupe" value="groupe">
                                                     <label class="form-check-label" for="type-groupe">Groupe</label>
                                                 </div>
                                             </div>
@@ -254,16 +274,11 @@
 
                                         <!-- Buttons -->
                                         <div class="d-flex flex-wrap gap-2 mt-3">
-                                            <button type="button" id="btn-calculer" class="btn btn-outline-primary">
-                                                Calculer / Actualiser
-                                            </button>
-                                            <button type="submit" class="btn btn-primary">
-                                                Valider la simulation
-                                            </button>
-                                            <button type="button" id="btn-reset"
-                                                class="btn btn-outline-secondary ms-auto">
-                                                Réinitialiser
-                                            </button>
+                                            <input type="submit" class="btn btn-primary" onclick="validForm()" value="envoyer">
+                                        </input>
+                                            <input type="reset" id="btn-reset" 
+                                                class="btn btn-outline-secondary ms-auto" value="Réinitialiser">
+                                    </input>
                                         </div>
 
                                     </form>
@@ -283,7 +298,7 @@
                                         <dd class="col-5 text-end"><span id="prix-unitaire">0</span> TND</dd>
 
                                         <dt class="col-7">Participants</dt>
-                                        <dd class="col-5 text-end"><span id="nb-participants">0</span></dd>
+                                        <dd class="col-5 text-end"><span id="nb-participants">1</span></dd>
 
                                         <dt class="col-7">Sous-total</dt>
                                         <dd class="col-5 text-end"><span id="sous-total">0.00</span> TND</dd>
@@ -317,7 +332,7 @@
                         </div>
 
                     </div>
-                </div>
+                </form>
             </section>
 
         </main>

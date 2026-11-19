@@ -306,3 +306,15 @@ nav.navbar{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
+.form-select-noarrow {
+  background-image: none !important;
+  padding-right: 0.75rem; /* reclaim the space the arrow reserved */
+}
+#contacthourblock{
+  position: relative;
+  border: #8f6116 4px solid;
+  border-radius: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: linear-gradient(to top, transparent, rgb(239, 189, 119)); 
+}
