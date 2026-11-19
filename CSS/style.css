@@ -95,13 +95,28 @@ nav.navbar{
   padding: 8px;
 }
 .pep{
-  color: antiquewhite;
+  transition: transform 0.2s ease, color 0.2s ease;
+  font-style: none;
   border: 7px solid #fab74a;
-  background-color: #875c17;
-  color: bisque;
+  background-color: #d59630;
+  color: rgb(193, 178, 160);
   border-radius: 20px;
   padding: 10px;
   margin: 5px;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0.6rem 1.2rem;
+  line-height: 1.5;
+  pointer-events: auto;
+}
+.pep:hover{
+  transform: scale(1.05);
+  background-color: #ff5709e6;
+  border-color: #b44a19e6;
 }
 #mobileMenu{
   background-color: antiquewhite;
@@ -182,7 +197,7 @@ nav.navbar{
 #cardimage2{
   background-image: url(/images/kelibia-fort.png);
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 710px;
   width: 100%;
   align-items: center;	
   margin: 0 auto;
@@ -204,7 +219,7 @@ nav.navbar{
 #cardimage3{
   background-image: url(/images/Peinture_sur_céramique_Nabeul.jpg);
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 710px;
   width: 100%;
   align-items: center;	
   margin: 0 auto;
@@ -226,7 +241,7 @@ nav.navbar{
 #cardimage4{
   background-image: url(/images/kerkouane.jpg);
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 710px;
   width: 100%;
   align-items: center;	
   margin: 0 auto;
@@ -282,4 +297,12 @@ nav.navbar{
   border-radius: 10px;
   background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
   pointer-events: none;
+}
+#clslink{
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }

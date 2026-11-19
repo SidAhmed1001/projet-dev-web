@@ -88,6 +88,14 @@ const activites = [
         description: "Parcourez les ruelles blanches et le bord de mer de Hammamet avec un photographe. Vous apprendrez à composer une image et à jouer avec la lumière. Chaque étape offre un point de vue remarquable. Apportez votre appareil ou votre téléphone."
     }
 ];
+
+const params = new URLSearchParams(window.location.search); //tjib data min lien
+const nomActivite = params.get('nomactive');
+if (nomActivite) {
+  const search = document.getElementById('recherche');
+  search.value =nomActivite;
+}
+
 const champRecherche = document.getElementById('recherche');
 const filtreCategorie = document.getElementById('filtre-categorie');
 const conteneurListe = document.getElementById('liste-activites');
@@ -179,3 +187,4 @@ function ouvrirModal(a) {
 champRecherche.addEventListener('input', filtrerActivites);
 filtreCategorie.addEventListener('change', filtrerActivites);
 afficherActivites(activites);
+filtrerActivites();
