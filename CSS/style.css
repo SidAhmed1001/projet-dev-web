@@ -1,75 +1,87 @@
-.title{
+.title {
   text-align: center;
 }
-#image1{
+
+#image1 {
   display: flex;
   width: 80px;
   margin: 0 0 0 0;
   align-items: left;
   float: left;
-  
+
 }
-header{
+
+header {
   background-color: #fab74a;
 }
-#navbar1{
+
+#navbar1 {
   background-color: #918664;
-  align-items: center;	
+  align-items: center;
   margin: 0 auto;
   border-radius: 10px;
   margin-top: 10px;
   position: relative;
   border-radius: 10px;
 }
-#navbar1:after{
+
+#navbar1:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.368)); 
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.368));
   pointer-events: none;
 }
-#titre{
+
+#titre {
   text-align: right;
   width: 1200px;
   padding: 5px;
 
 }
-nav.navbar{
+
+nav.navbar {
   background-color: #f8f9fa;
   padding: 10px;
   border-radius: 5px;
 }
-#arrow{
+
+#arrow {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-#maincontainer{
+
+#maincontainer {
   background-color: #e3e0c2;
   border-radius: 10px;
   padding: 10px;
 }
-#header1{
+
+#header1 {
   position: relative;
   margin-top: 10px;
 }
-#header1:after{
+
+#header1:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 100%;
   width: 40%;
-  background: linear-gradient(to left, transparent, rgba(232, 38, 48, 0.577)); 
+  background: linear-gradient(to left, transparent, rgba(232, 38, 48, 0.577));
   background-repeat: no-repeat;
-  
+
 }
-#header2{
+
+#header2 {
   background-color: #e3e0c2;
   margin-top: 10px;
 }
+
 #banniere {
   position: relative;
   background-image: url("../images/kelibia_bannieres.png");
@@ -79,22 +91,25 @@ nav.navbar{
   border-top-right-radius: 20px;
   padding-bottom: 50px;
 }
-#banniere:after{
+
+#banniere:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
-  height: 35%; 
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,1)); 
+  height: 35%;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 1));
   background-repeat: no-repeat;
-  
+
 }
-#introduction{
+
+#introduction {
   color: white;
   background-color: rgba(42, 42, 42, 0.34);
   border-radius: 15px;
   padding: 8px;
 }
-.pep{
+
+.pep {
   transition: transform 0.2s ease, color 0.2s ease;
   font-style: none;
   border: 7px solid #fab74a;
@@ -113,15 +128,18 @@ nav.navbar{
   line-height: 1.5;
   pointer-events: auto;
 }
-.pep:hover{
+
+.pep:hover {
   transform: scale(1.05);
   background-color: #ff5709e6;
   border-color: #b44a19e6;
 }
-#mobileMenu{
+
+#mobileMenu {
   background-color: antiquewhite;
 }
-#hero-banner-title{
+
+#hero-banner-title {
   color: white;
   background-color: rgba(0, 0, 0, 0.394);
   margin: 8px;
@@ -134,10 +152,12 @@ nav.navbar{
   margin-bottom: 20px;
   border-radius: 8px;
 }
-.container1{
+
+.container1 {
   padding: 9px;
 }
-#discover-activities-btn{
+
+#discover-activities-btn {
   position: relative;
   z-index: 2;
   display: inline-flex;
@@ -149,7 +169,8 @@ nav.navbar{
   line-height: 1.5;
   pointer-events: auto;
 }
-#nav-link{
+
+#nav-link {
   font-size: larger;
   text-decoration: none;
   color: white;
@@ -157,110 +178,122 @@ nav.navbar{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
-#nav-link:hover{
+
+#nav-link:hover {
   transform: scale(1.3);
   color: #fab74a;
-  
+
 }
-.cardcustom{
+
+.cardcustom {
   border-radius: 20px;
   height: 300px;
   display: block;
   transform: scale(1);
   transition: transform 0.3s ease;
 }
-.cardcustom:hover{
+
+.cardcustom:hover {
   transform: scale(1.05);
 }
-#cardimage1{
+
+#cardimage1 {
   background-image: url(/images/hammamet.png);
   background-repeat: no-repeat;
   background-size: 710px;
   width: 100%;
-  align-items: center;	
+  align-items: center;
   margin: 0 auto;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#cardimage1:after{
+
+#cardimage1:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
   pointer-events: none;
   background-color: transparent;
 }
-#cardimage2{
+
+#cardimage2 {
   background-image: url(/images/kelibia-fort.png);
   background-repeat: no-repeat;
   background-size: 710px;
   width: 100%;
-  align-items: center;	
+  align-items: center;
   margin: 0 auto;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#cardimage2:after{
+
+#cardimage2:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
   pointer-events: none;
   background-color: transparent;
 }
-#cardimage3{
+
+#cardimage3 {
   background-image: url(/images/Peinture_sur_céramique_Nabeul.jpg);
   background-repeat: no-repeat;
   background-size: 710px;
   width: 100%;
-  align-items: center;	
+  align-items: center;
   margin: 0 auto;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#cardimage3:after{
+
+#cardimage3:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
   pointer-events: none;
   background-color: transparent;
 }
-#cardimage4{
+
+#cardimage4 {
   background-image: url(/images/kerkouane.jpg);
   background-repeat: no-repeat;
   background-size: 710px;
   width: 100%;
-  align-items: center;	
+  align-items: center;
   margin: 0 auto;
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#cardimage4:after{
+
+#cardimage4:after {
   content: "";
   position: absolute;
   inset: auto 0 0 0;
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
   pointer-events: none;
   background-color: transparent;
 }
-#nav-link-footer{
+
+#nav-link-footer {
   margin-left: 15px;
   font-size: larger;
   text-decoration: none;
@@ -269,25 +302,31 @@ nav.navbar{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
-#nav-link-footer:hover{
+
+#nav-link-footer:hover {
   transform: scale(1.3);
   color: #fab74a;
-  
+
 }
+
 #liste-activites .card {
   transition: transform .25s ease, box-shadow .25s ease;
   height: 100%;
 }
+
 #liste-activites .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }
+
 #compteur {
   color: var(--cb-bleu, #0b4f6c);
 }
+
 #imgFade {
   position: relative;
 }
+
 #imgFade:after {
   content: "";
   position: absolute;
@@ -295,10 +334,11 @@ nav.navbar{
   height: 30%;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
   pointer-events: none;
 }
-#clslink{
+
+#clslink {
   font-size: larger;
   text-decoration: none;
   color: white;
@@ -306,15 +346,64 @@ nav.navbar{
   transform: scale(1);
   transition: transform 0.3s ease;
 }
+
 .form-select-noarrow {
   background-image: none !important;
-  padding-right: 0.75rem; /* reclaim the space the arrow reserved */
+  padding-right: 0.75rem;
+  /* reclaim the space the arrow reserved */
 }
-#contacthourblock{
+
+#contacthourblock::before {
   position: relative;
-  border: #8f6116 4px solid;
-  border-radius: 5%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 4px;
+}
+
+#contacthourblock {
+  border: 4px solid transparent;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: none;
   margin-left: 10%;
   margin-right: 10%;
-  background: linear-gradient(to top, transparent, rgb(239, 189, 119)); 
+  background:
+    linear-gradient(to top, transparent, rgb(239, 189, 119)) padding-box,
+    linear-gradient(to top, transparent, #a5701c) border-box;
+}
+#contactfaqblock::before{
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 4px;
+}
+#contactfaqblock {
+  border: 4px solid transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: none;
+  
+  margin-left: 10%;
+  margin-right: 10%;
+  background:
+    linear-gradient(to bottom, transparent, rgb(239, 189, 119)) padding-box,
+    linear-gradient(to bottom, transparent, #a5701c) border-box;
+}
+fieldset {
+  border: 2px solid #dee2e6; /* Or use Bootstrap utility classes instead */
+  border-radius: 8px;
+  padding: 0.5em 1em;
+}
+
+legend {
+  float: none;        /* Key: cancel Bootstrap's float */
+  width: auto;        /* Key: no longer occupy full width */
+  padding: 0 8px;     /* Add spacing on both sides to cover the border */
+  margin-bottom: 0;   /* Remove default bottom margin */
+  font-size: 1.1rem;  /* Adjust as needed */
+}
+.centerinsides{
+  display: flex;
+  justify-content: center; /* horizontal axis */
+  align-items: center;     /* vertical axis */
 }
