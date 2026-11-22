@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Cap Bon Explorer</title>
+    <link rel="stylesheet" href="BootStraps/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="">
+    <div class=" p-2" id="maincontainer">
+        <header class="modal-header border-opacity-10" id="header1">
+            <div class="d-flex justify-content-center align-items-center col-4 gap-5">
+                <a class="navbar-brand" href="index.html"><img src="images/image3.png" alt="Logo" class="brand"
+                        id="image1"></a>
+            </div>
+            <h1 class="display-2 text-center" id="titre">Cap Bon Explorer</h1>
+
+        </header>
+        <header id="header2" class="rounded">
+
+            <nav class="navbar nav" id="navbar1">
+                <!-- MOBILE ONLY -->
+                <div class="container-fluid rounded-rounded">
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myNavLinks" aria-controls="myNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    </button>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"><img src="images/arrow.png" alt="Menu" id="arrow"
+                                class="navbar-toggler-icon rounded-circle"></span>
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <div class="navbar-nav">
+                                <div class="nav-item pep">
+                                    <a href="index.html" class="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="activites.html" class="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="agenda.html" class="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="reservation.html" class="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item pep">
+                                    <a href="contact.html" class="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DESKTOP ONLY-->
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+                        <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                            <div class="navbar-nav flex-row justify-content-center gap-2 gap-lg-4 w-100">
+                                <div class="nav-item">
+                                    <a href="index.html" class="" id="nav-link">Accueil</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="activites.html" class="" id="nav-link">Activités</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="agenda.html" class="" id="nav-link">Agenda</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="reservation.html" class="" id="nav-link">Réservation</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="contact.html" class="" id="nav-link">Contact/FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <!-- 1. Page title + intro -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <h1 class="mb-2">Agenda des événements</h1>
+                    <p class="lead mb-0">
+                        Retrouvez les prochaines expériences proposées par Cap Bon Explorer.
+                        Consultez les dates, les lieux et les tarifs, puis réservez votre
+                        activité depuis la page dédiée.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2. Events table -->
+            <section class="py-5">
+                <div class="container">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover align-middle">
+                            <caption class="text-muted">
+                                Agenda indicatif — dates fictives pour ce projet pédagogique.
+                            </caption>
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Activité</th>
+                                    <th scope="col">Heure</th>
+                                    <th scope="col">Lieu</th>
+                                    <th scope="col" class="text-end">Tarif</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>05/12/2026</td>
+                                    <td>Promenade photographique</td>
+                                    <td>09:30</td>
+                                    <td>Hammamet</td>
+                                    <td class="text-end">30 TND</td>
+                                </tr>
+                                <tr>
+                                    <td>12/12/2026</td>
+                                    <td>Initiation à la poterie</td>
+                                    <td>10:00</td>
+                                    <td>Nabeul</td>
+                                    <td class="text-end">35 TND</td>
+                                </tr>
+                                <tr>
+                                    <td>19/12/2026</td>
+                                    <td>Randonnée découverte</td>
+                                    <td>08:30</td>
+                                    <td>Cap Bon</td>
+                                    <td class="text-end">25 TND</td>
+                                </tr>
+                                <tr>
+                                    <td>09/01/2027</td>
+                                    <td>Découverte de la médina</td>
+                                    <td>10:00</td>
+                                    <td>Nabeul</td>
+                                    <td class="text-end">20 TND</td>
+                                </tr>
+                                <tr>
+                                    <td>16/01/2027</td>
+                                    <td>Peinture sur céramique</td>
+                                    <td>14:00</td>
+                                    <td>Nabeul</td>
+                                    <td class="text-end">25 TND</td>
+                                </tr>
+                                <tr>
+                                    <td>23/01/2027</td>
+                                    <td>Découverte du marché local</td>
+                                    <td>09:00</td>
+                                    <td>Nabeul</td>
+                                    <td class="text-end">15 TND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="text-muted small mt-2">
+                        Note : le tarif du 09/01/2027 (20 TND) correspond à l'activité
+                        « Découverte de la médina » (A01).
+                    </p>
+
+                </div>
+            </section>
+
+            <!-- 3. Prochaines expériences -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="h4 mb-3">Prochaines expériences</h2>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <a href="activites.html" class="btn btn-outline-primary w-100 py-3">
+                                Voir toutes les activités
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="reservation.html" class="btn btn-primary w-100 py-3">
+                                Simuler une réservation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer bg-light p-2 m-2 rounded-3" id="footer1" id="mainfooter">
+            <ul class="list-unstyled list-group-horizontal">
+                <li><a href="index.html" id="nav-link-footer">-Accueil</a></li>
+                <li><a href="agenda.html" id="nav-link-footer">-Agenda</a></li>
+                <li><a href="contact.html" id="nav-link-footer">-Contact</a></li>
+            </ul>
+            <p class="text-center">copyright © 2024 Cap Bon Explorer. Tous droits réservés. (projet pour ISETN)</p>
+
+        </footer>
+    </div>
+
+    <!--partie scripts/bootstrap-->
+    <script src="BootStraps/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
