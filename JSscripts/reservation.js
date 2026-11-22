@@ -9,8 +9,11 @@ r1 = document.getElementById("type-individuel");
 r2 = document.getElementById("type-famille");
 r3 = document.getElementById("type-groupe");
 r1.addEventListener('click', selectindivisuel);
+r1.addEventListener('click',calculepayer);
 r2.addEventListener('click', selectplusieur);
+r2.addEventListener('click',calculepayer);
 r3.addEventListener('click', selectplusieur);
+r3.addEventListener('click',calculepayer);
 
 var nom = document.getElementById("nom");
 var prenom = document.getElementById("prenom");
@@ -19,7 +22,6 @@ var activite = document.getElementById("activite");
 var date = document.getElementById("date");
 var participants = document.getElementById("participants");
 var telephone = document.getElementById("telephone");
-
 
 var prixuni = document.getElementById("prix-unitaire")
 var nbpart = document.getElementById("nb-participants")
@@ -183,7 +185,9 @@ function calculepayer() {
   remise = document.getElementById("remise")
   activite = document.getElementById("activite");
   participants = document.getElementById("participants");
-  if (activite.value == "" || participants.value < 0) {
+  v=validActivite()
+  validParticipants()
+  if ((activite.value == "" || participants.value < 0) && v=="") {
     total.innerHTML = "<b>0 DT</b>"
   } else {
     if (participants.value >= 4) {

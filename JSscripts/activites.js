@@ -142,7 +142,7 @@ function afficherActivites(liste) {
     if (liste.length === 0) {
         compteur.textContent = "aucune activité trouvée"
     } else {
-        compteur.textContent = liste.length + "aucune activité trouvée"
+        compteur.textContent = liste.length + " activité trouvée"
     }
 }
 function creerCarte(a) {
@@ -159,30 +159,20 @@ function creerCarte(a) {
         '<p class="card-text">' + a.accroche + '</p>' +
         '<p class="prix fw-bold mt-auto">' + a.prix + ' TND / personne</p>' +
         '<div class="d-flex gap-2">' +
-        '<button type="button" class="btn btn-outline-primary btn-sm btn-details">Voir les détails</button>' +
+        '<button type="button" onclick=\'activer(String("desc"+"'+a.id+'"));\' class="btn btn-outline-primary btn-sm btn-details">Voir les détails</button>' +
         '<a class="btn btn-primary btn-sm btn-reserver" href="reservation.html?activite=' + a.id + '">Réserver</a>' +
         '</div>' +
+        '<div><dialog id="'+String("desc"+a.id)+'"> <img src="images/cross.png" id="btnExit" onclick=\'deactiver(String("desc"+"'+a.id+'"));\'> <iframe src="activSousPage/'+a.id+'.html" scrolling="no"></dialog></div>'+
         '</div>' +
         '</div>';
-    const btnDetails = col.querySelector('.btn-details');
-    btnDetails.addEventListener('click', function () {
-        ouvrirModal(a);
-    });
 
     return col;
 }
-function ouvrirModal(a) {
-    modalTitre.textContent = a.titre;
-    if (!modalActivite) return;
-    modalCorps.innerHTML =
-        '<p><strong>Lieu :</strong> ' + a.lieu + '</p>' +
-        '<p><strong>Catégorie :</strong> ' + a.categorie + '</p>' +
-        '<p><strong>Durée :</strong> ' + a.duree + '</p>' +
-        '<p><strong>Tarif :</strong> ' + a.prix + ' TND / personne</p>' +
-        '<hr>' +
-        '<p>' + a.description + '</p>';
-    modalBoutonResa.href = 'reservation.html?activite=' + a.id;
-    modalActivite.show();
+function activer(id) {
+    document.getElementById(id).showModal();
+}
+function deactiver(id) {
+    document.getElementById(id).close();
 }
 champRecherche.addEventListener('input', filtrerActivites);
 filtreCategorie.addEventListener('change', filtrerActivites);
