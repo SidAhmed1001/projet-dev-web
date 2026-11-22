@@ -142,7 +142,7 @@ function afficherActivites(liste) {
     if (liste.length === 0) {
         compteur.textContent = "aucune activité trouvée"
     } else {
-        compteur.textContent = liste.length + " activité trouvée"
+        compteur.textContent = liste.length + " activité(s) visible(s)"
     }
 }
 function creerCarte(a) {

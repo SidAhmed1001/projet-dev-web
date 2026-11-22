@@ -22,6 +22,7 @@ var activite = document.getElementById("activite");
 var date = document.getElementById("date");
 var participants = document.getElementById("participants");
 var telephone = document.getElementById("telephone");
+var form =document.getElementById("form-reservation")
 
 var prixuni = document.getElementById("prix-unitaire")
 var nbpart = document.getElementById("nb-participants")
@@ -92,7 +93,7 @@ function validDate() {
 
   d1 = new Date();
   d2 = new Date(date.value);
-  if (d2 == "Invalid Date" || d1.getTime() >= d2.getTime() - 345600000) { // 345,600,000 represente 4 jour
+  if (isNaN(d2.getTime()) || d1.getTime() >= d2.getTime() - 345600000) { // 345,600,000 represente 4 jour
     date.style.borderColor = "red";
     date.style.backgroundColor = "#d8858c";
     return "<li>date soit étre reilisée aprés 4 jour minimum a date courant</li>"
@@ -169,7 +170,7 @@ function validForm() {
   mes = mes + validTelephone()
   mes = mes + validParticipants();
   mes = mes + validActivite();
-  if (message != "") {
+  if (mes != "") {
     message.innerHTML = '<h3>données sont invalid</h3><ul>' + mes + '</ul>'
     message.hidden = false
     return false
@@ -185,7 +186,7 @@ function calculepayer() {
   remise = document.getElementById("remise")
   activite = document.getElementById("activite");
   participants = document.getElementById("participants");
-  v=validActivite()
+  let v=validActivite()
   validParticipants()
   if ((activite.value == "" || participants.value < 0) && v=="") {
     total.innerHTML = "<b>0 DT</b>"
